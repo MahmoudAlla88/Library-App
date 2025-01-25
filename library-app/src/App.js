@@ -15,9 +15,9 @@ class App extends Component {
 
   render() {
     return (
-      <main>
+      <main style={{ display: 'flex', margin: '20px', justifyContent: 'center' }}>
         {this.state.books.map((book) => (
-          <div key={book.id} style={{ border: '1px solid #ccc', margin: '10px', padding: '10px' }}>
+          <div className="card" key={book.id} style={{ border: '1px solid #ccc', margin: '10px', padding: '10px' }}>
             <h2>{book.title}</h2>
             <p><strong>Author:</strong> {book.author}</p>
             <p><strong>ISBN:</strong> {book.isbn}</p>
@@ -26,6 +26,7 @@ class App extends Component {
       </main>
     );
   }
+  
 }
 
 export default App;

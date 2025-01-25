@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Footer extends Component {
   render() {
-    return <footer><p>&copy;Library App</p></footer>;
+    return <footer><p><div class="container">&copy;Library App</div></p></footer>;
   }
 }
 
